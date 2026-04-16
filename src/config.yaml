@@ -1,0 +1,6 @@
+site:
+  name: "Norteño Music"
+  base: "/"
+
+seo:
+  description: "Lo mejor de la música norteña"
