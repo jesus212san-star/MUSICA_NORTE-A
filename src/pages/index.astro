@@ -1,0 +1,38 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/widgets/Header.astro';
+---
+
+<Layout title="Música Norteña">
+  <Header />
+
+  <section class="text-center py-10">
+    <h1 class="text-4xl font-bold">Música Norteña</h1>
+    <p class="mt-4 text-lg">Lo mejor del regional mexicano</p>
+  </section>
+
+  <section class="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
+    <div class="bg-gray-800 p-4 rounded-xl">
+      <img src="/src/assets/images/peso-pluma.jpg" alt="Peso Pluma">
+      <h2 class="text-xl mt-2">Peso Pluma</h2>
+    </div>
+
+    <div class="bg-gray-800 p-4 rounded-xl">
+      <img src="/src/assets/images/grupo-firme.jpg" alt="Grupo Firme">
+      <h2 class="text-xl mt-2">Grupo Firme</h2>
+    </div>
+
+    <div class="bg-gray-800 p-4 rounded-xl">
+      <img src="/src/assets/images/tigres.jpg" alt="Tigres del Norte">
+      <h2 class="text-xl mt-2">Los Tigres del Norte</h2>
+    </div>
+  </section>
+
+  <section class="p-6">
+    <h2 class="text-2xl mb-4">🎧 Reproductor</h2>
+    <audio controls class="w-full">
+      <source src="/src/assets/audio/cancion.mp3" type="audio/mpeg">
+    </audio>
+  </section>
+
+</Layout>
